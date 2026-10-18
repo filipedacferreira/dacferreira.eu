@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Not found · Filipe Ferreira</title>
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <!-- Analytics: Umami, cookieless. Only counts visits on the live domain. -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="53b82523-924e-40c4-b48d-5c8e180ee61d" data-domains="dacferreira.eu"></script>
+  <style>
+    @font-face {
+      font-family: "Instrument Sans";
+      src: url("/fonts/instrument-sans-latin.woff2") format("woff2");
+      font-weight: 400 700;
+      font-display: swap;
+    }
+    :root { color-scheme: light; --bg: #eff1f5; --strong: #4c4f69; --muted: #8c8fa1; --underline: #bcc0cc; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="latte"]) { color-scheme: dark; --bg: #1e1e2e; --strong: #cdd6f4; --muted: #7f849c; --underline: #45475a; }
+    }
+    :root[data-theme="mocha"] { color-scheme: dark; --bg: #1e1e2e; --strong: #cdd6f4; --muted: #7f849c; --underline: #45475a; }
+    :root[data-theme="ocean"] { color-scheme: dark; --bg: #0f1b26; --strong: #d4eef5; --muted: #5f8090; --underline: #23394a; }
+
+    * { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--muted);
+      font: 400 16px/1.65 "Instrument Sans", system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: 520px; margin: 0 auto; padding: 18vh 20px 64px; }
+    .whale { font-size: 32px; line-height: 1; margin-bottom: 20px; }
+    p + p { margin-top: 8px; }
+    a {
+      color: var(--strong);
+      font-weight: 500;
+      text-decoration: underline;
+      text-decoration-color: var(--underline);
+      text-underline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="whale" aria-hidden="true">🐋</p>
+    <p>Nothing here, just a whale that took a wrong turn.</p>
+    <p><a href="/">Back home</a></p>
+  </main>
+</body>
+</html>
