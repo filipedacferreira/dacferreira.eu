@@ -1,8 +1,0 @@
-{
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "dacferreira-eu",
-  "compatibility_date": "2026-10-01",
-  // Static site on Cloudflare Pages: everything in public/ is published,
-  // and 404.html is served for missing pages
-  "pages_build_output_dir": "./public"
-}

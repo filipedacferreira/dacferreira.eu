@@ -12,11 +12,7 @@ Opening `public/index.html` directly also works. `404.html` needs a server, sinc
 
 ## Deploy
 
-Hosted on Cloudflare Pages.
-
-```sh
-npx wrangler pages deploy
-```
+Hosted on GitHub Pages. Every push to `main` publishes `public/` through the workflow in `.github/workflows/pages.yml`.
 
 ## Files
 
